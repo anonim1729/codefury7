@@ -76,8 +76,8 @@ function App() {
       element: <SignUp />
     },
     {
-      path: '*',
-      element: <NotFound />
+      path: '/*',
+      element: <NotFound/>
     }
   ]);
 

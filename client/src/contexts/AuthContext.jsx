@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const AuthContext = createContext();
-const API_URL = 'http://localhost:3000/'
+const API_URL2 = import.meta.env.VITE_BACKEND_URL2;
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState('');
@@ -17,7 +17,7 @@ export const AuthProvider = ({ children }) => {
       const token = localStorage.getItem('token');
       if (token) {
         try {
-          const response = await axios.get(`${API_URL}auth/me`, {
+          const response = await axios.get(`${API_URL2}auth/me`, {
             headers: { Authorization: `Bearer ${token}` }
           });
           console.log(response.data.user);
@@ -47,7 +47,7 @@ export const AuthProvider = ({ children }) => {
       console.log(location, volunteer, user);
 
       const response = await axios.put(
-        `${API_URL}auth/me/updateUser`,
+        `${API_URL2}auth/me/updateUser`,
         {
           location,
           role: volunteer,
@@ -71,7 +71,7 @@ export const AuthProvider = ({ children }) => {
   const signin = async (email, password, navigate) => {
     try {
       console.log(email, password);
-      const response = await axios.post(`${API_URL}auth/signin`, { email, password });
+      const response = await axios.post(`${API_URL2}auth/signin`, { email, password });
       localStorage.setItem('token', response.data.token);
       setUser(response.data.user.email);
       toast("Welcome back!");
@@ -84,7 +84,7 @@ export const AuthProvider = ({ children }) => {
 
   const signup = async (email, password, navigate) => {
     try {
-      const response = await axios.post(`${API_URL}auth/signup`, { email, password });
+      const response = await axios.post(`${API_URL2}auth/signup`, { email, password });
       //   console.log(response);
       //   console.log(response.data.user);
       //   console.log(response.data.token);

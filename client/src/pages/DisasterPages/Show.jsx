@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Loader from "../../components/Loader";
-let API_URL = "http://localhost:3000";
+let API_URL = import.meta.env.VITE_BACKEND_URL;
+console.log(API_URL);
 
 const Show = () => {
   const [disasters, setDisasters] = useState([]);
