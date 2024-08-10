@@ -31,6 +31,35 @@ export const AuthProvider = ({ children }) => {
 
     checkUser();
   }, []);
+  const updateUser = async (location, volunteer, navigate) => {
+    try {
+      const token = localStorage.getItem('token');
+      if (!token) {
+        toast("Session expired! Please log in again.");
+        return;
+      }
+
+      console.log(location, volunteer, user);
+
+      const response = await axios.put(
+        `${API_URL}auth/me/updateUser`,
+        {
+          location,
+          role: volunteer,
+          email: user,
+        },
+        {
+          headers: { Authorization: `Bearer ${token}` }
+        }
+      );
+
+      toast("User information updated successfully!");
+      navigate('me');
+    } catch (error) {
+      console.error('Error updating user:', error.response?.data?.message || error.message);
+      toast.error('Failed to update user information');
+    }
+  };
 
   const signin = async (email, password, navigate) => {
     try {
@@ -71,7 +100,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   return (
-    <AuthContext.Provider value={{ user, loading, signin, signup, signout, authErr, setAuthErr,loading }}>
+    <AuthContext.Provider value={{ user, signin, signup, signout, authErr, setAuthErr, loading, updateUser }}>
       {children}
     </AuthContext.Provider>
   );

@@ -47,6 +47,30 @@ const signin = async (req, res) => {
     res.status(500).json({ message: "server error" });
   }
 };
+const updateUser = async (req, res) => {
+  try {
+    const { email, location, role } = req.body;
+    console.log(email,location,role);
+    let user = await User.findOne({ email });
+    if (!user) {
+      return res.status(400).json({ message: "User not found" });
+    }
+    if (location) {
+      user.location = location;
+    }
+    if (role=='yes') {
+      user.role = 'volenteer';
+    }
+    else
+    {
+      user.role='user'
+    }
+    await user.save();
+    res.status(200).json({ message: "User updated successfully", user });
+  } catch (error) {
+    res.status(500).json({ message: "Server error" });
+  }
+};
 const verifyToken = (req, res, next) => {
     const token = req.header('Authorization').replace('Bearer ', '');
     
@@ -74,4 +98,4 @@ const signout = (req, res) => {
   res.json({ message: 'Signed out successfully' });
 };
 
-module.exports = { signin, signup, signout,verifyToken,getuser };
+module.exports = { signin, signup, signout,verifyToken,getuser,updateUser };

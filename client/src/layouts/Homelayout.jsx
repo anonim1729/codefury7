@@ -12,7 +12,7 @@ const Homelayout = () => {
         if (!loading&&user.length==0) {
             navigate('/');
         }
-    }, [user]);
+    }, [user,loading]);
     return (
         <div>
             <Navbar />
