@@ -7,6 +7,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Dashboard from './components/Dashboard';
 import Chatbot from './components/Chatbot';
+import UserForm from './components/UserForm';
 function App() {
   const router = createBrowserRouter([
     {
@@ -24,6 +25,10 @@ function App() {
         {
           path: 'chat',
           element: <Chatbot />
+        },
+        {
+          path: 'form',
+          element: <UserForm />
         }
       ]
     },

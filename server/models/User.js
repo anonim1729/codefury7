@@ -13,6 +13,12 @@ const userSchema = new Schema({
     required: true,
     minlength: 8,
   },
+  role: {
+    type: String
+  },
+  location: {
+    type: String
+  },
   createdAt: {
     type: Date,
     default: Date.now,
