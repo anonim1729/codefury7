@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import {GoogleGenerativeAI} from '@google/generative-ai';
 const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 
 const AdditionalInfo = ({ disas }) => {
