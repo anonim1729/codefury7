@@ -29,8 +29,8 @@ const Chatbot = () => {
                     headers: { 'Content-Type': 'application/json' }
                 }
             );
-            console.log(res.data.candidates[0].content.parts[0].text);
-            setResponse(res.data.candidates[0].content.parts[0].text);
+            console.log(res.data.candidates[0].content.parts[0]?.text);
+            setResponse(res.data.candidates[0].content.parts[0]?.text);
         } catch (error) {
             console.log(error);
         }

@@ -10,8 +10,8 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState('');
   const [loading, setLoading] = useState(true);
   const [authErr, setAuthErr] = useState('');
-  const [location,setLocation]=useState('Bengaluru');
-  const [role,setRole]=useState('user');
+  const [location, setLocation] = useState('Bengaluru');
+  const [role, setRole] = useState('user');
   useEffect(() => {
     const checkUser = async () => {
       const token = localStorage.getItem('token');
@@ -64,7 +64,7 @@ export const AuthProvider = ({ children }) => {
       navigate('/');
     } catch (error) {
       console.error('Error updating user:', error.response?.data?.message || error.message);
-      toast.error('Failed to update user information');
+      toast.error('session expired!please login');
     }
   };
 
@@ -107,7 +107,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   return (
-    <AuthContext.Provider value={{ user, signin, signup, signout, authErr, setAuthErr, loading, updateUser,role,location,setRole,setLocation }}>
+    <AuthContext.Provider value={{ user, signin, signup, signout, authErr, setAuthErr, loading, updateUser, role, location, setRole, setLocation }}>
       {children}
     </AuthContext.Provider>
   );
