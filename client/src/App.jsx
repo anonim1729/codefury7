@@ -4,10 +4,6 @@ import Homelayout from './layouts/Homelayout';
 import SignUp from './pages/SignUp';
 import Login from './pages/Login';
 
-import Create from './pages/DisasterPages/CreateDisaster'
-import Show from './pages/DisasterPages/Show'
-import ShowDisaster from './pages/DisasterPages/ShowDisaster';
-import UpdateDisaster from './pages/DisasterPages/Update';
 import NotFound from './pages/NotFound';
 
 import { ToastContainer } from 'react-toastify';
@@ -18,6 +14,9 @@ import UserForm from './components/UserForm';
 import Notifications from './components/Notifications';
 import AlertPages from './pages/AlertPages';
 import Weather from './components/Weather';
+import NaturalDisasters from './pages/NaturalDisasters';
+import DisasterPrep from './components/DisasterPrep';
+
 function App() {
   const router = createBrowserRouter([
     {
@@ -41,39 +40,31 @@ function App() {
           element: <UserForm />
         },
         {
-          path:'notifications',
-          element:<Notifications/>
+          path: 'notifications',
+          element: <Notifications />
         },
         {
-          path:'alerts',
-          element:<AlertPages/>
+          path: 'alerts',
+          element: <AlertPages />
         },
         {
-          path:'weather',
-          element:<Weather/>
+          path: 'weather',
+          element: <Weather />
         },
         {
-          path: 'disaster',
-          // element: <div>Hello</div>, // Placeholder, replace with an actual layout if needed
+          path: 'edu',
+          element: <NaturalDisasters />
+        },
+        {
+          path: 'disasters',
           children: [
             {
-              path: '',
-              element: <Show /> 
-            },
-            {
-              path: 'new',
-              element: <Create /> // This will render the Create component at /disaster/new
-            },
-            {
-              path:':id',
-              element: <ShowDisaster />
-            },
-            {
-              path: 'update/:id',
-              element: <UpdateDisaster />,
+              path: ':id',
+              element: <DisasterPrep />
             }
           ]
         }
+        
       ]
     },
     {
@@ -86,9 +77,10 @@ function App() {
     },
     {
       path: '*',
-      element: <NotFound/>
+      element: <NotFound />
     }
-  ])
+  ]);
+
   return (
     <>
       <ToastContainer
@@ -106,7 +98,7 @@ function App() {
       />
       <RouterProvider router={router} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

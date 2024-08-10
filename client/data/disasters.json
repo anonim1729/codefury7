@@ -1,0 +1,332 @@
+[
+    {
+        "id": 1,
+        "disaster": "Earthquake",
+        "imageUrl": "../public/earthquake.jpg",
+        "description": "An earthquake is a sudden and rapid shaking of the ground caused by the movement of tectonic plates beneath the Earth's surface. They can occur without warning and may vary in intensity, potentially causing significant damage to buildings, infrastructure, and the environment.",
+        "preventive_measures": [
+            "Secure heavy furniture and appliances.",
+            "Develop an emergency plan with your family.",
+            "Practice earthquake drills regularly.",
+            "Ensure your home meets local building codes.",
+            "Create an emergency kit with essential supplies.",
+            "Stay informed about local earthquake risks.",
+            "Identify safe spots in each room.",
+            "Install flexible gas lines to prevent leaks.",
+            "Anchor large appliances to walls.",
+            "Join a local preparedness group."
+        ],
+        "during_disaster": [
+            "Drop to your hands and knees.",
+            "Cover your head and neck under a sturdy table.",
+            "Hold on until the shaking stops.",
+            "Stay indoors and away from windows.",
+            "If outside, move to an open area away from buildings.",
+            "If in a vehicle, stop safely and stay inside.",
+            "Avoid using elevators.",
+            "Be prepared for aftershocks.",
+            "Stay calm and reassure others.",
+            "Listen to emergency broadcasts for updates."
+        ]
+    },
+    {
+        "id": 2,
+        "disaster": "Flood",
+        "imageUrl": "../public/flood.jpg",
+        "description": "Floods occur when water overflows onto normally dry land, often caused by heavy rainfall, melting snow, or dam failure. Flooding can lead to significant property damage, loss of life, and long-term environmental impacts.",
+        "preventive_measures": [
+            "Install sump pumps in basements.",
+            "Elevate utilities and appliances above flood levels.",
+            "Create a flood emergency plan.",
+            "Know your area's flood risk.",
+            "Install flood barriers and levees.",
+            "Maintain drainage systems and gutters.",
+            "Avoid building in flood-prone areas.",
+            "Monitor weather forecasts and alerts.",
+            "Stay informed about local flood zones.",
+            "Purchase flood insurance."
+        ],
+        "during_disaster": [
+            "Move to higher ground immediately.",
+            "Avoid walking or driving through floodwaters.",
+            "Stay indoors and away from windows.",
+            "Listen to emergency updates on radio or TV.",
+            "Do not return home until authorities say it's safe.",
+            "Avoid contact with floodwater as it may be contaminated.",
+            "Turn off utilities if instructed.",
+            "Help others in your community if safe to do so.",
+            "Be cautious of snakes and other wildlife displaced by floodwaters.",
+            "Follow evacuation orders if given."
+        ]
+    },
+    {
+        "id": 3,
+        "disaster": "Hurricane",
+        "imageUrl": "../public/hurricane.jpg",
+        "description": "A hurricane is a powerful tropical storm with sustained winds of at least 74 mph. These storms can cause severe damage through strong winds, heavy rainfall, and storm surges, leading to flooding and destruction in coastal areas.",
+        "preventive_measures": [
+            "Have an emergency plan in place.",
+            "Secure windows and doors with storm shutters.",
+            "Elevate your home if in a flood-prone area.",
+            "Stock up on essential supplies and medications.",
+            "Know your evacuation routes.",
+            "Create a communication plan with family.",
+            "Trim trees and shrubs around your home.",
+            "Check your insurance coverage.",
+            "Stay informed about storm forecasts.",
+            "Participate in community preparedness drills."
+        ],
+        "during_disaster": [
+            "Stay indoors and away from windows.",
+            "Listen to emergency alerts and local news.",
+            "Move to a safe room if conditions worsen.",
+            "Do not go outside until authorities say it's safe.",
+            "Avoid using candles or open flames.",
+            "Keep a battery-operated radio for updates.",
+            "Be prepared for power outages.",
+            "Avoid driving in flooded areas.",
+            "Help neighbors if it’s safe to do so.",
+            "Document any damage for insurance claims."
+        ]
+    },
+    {
+        "id": 4,
+        "disaster": "Tornado",
+        "imageUrl": "../public/tornado.jpg",
+        "description": "A tornado is a rapidly rotating column of air that extends from a thunderstorm to the ground. Tornadoes can cause extensive damage to buildings, uproot trees, and throw debris at high speeds, making them extremely dangerous.",
+        "preventive_measures": [
+            "Identify a safe room or storm shelter.",
+            "Have an emergency kit ready.",
+            "Stay informed through weather alerts.",
+            "Practice tornado drills with your family.",
+            "Secure loose items outdoors.",
+            "Know the signs of an approaching tornado.",
+            "Install a NOAA weather radio.",
+            "Create a family communication plan.",
+            "Remove dead trees and branches.",
+            "Join local weather alert programs."
+        ],
+        "during_disaster": [
+            "Seek shelter in a basement or small interior room.",
+            "Avoid windows and doors.",
+            "Cover yourself with a heavy blanket or mattress.",
+            "Listen to weather updates and warnings.",
+            "If outside, lie flat in a low area.",
+            "Stay away from mobile homes and vehicles.",
+            "Protect your head and neck.",
+            "Be aware of flying debris.",
+            "Stay put until the storm has passed.",
+            "Check on neighbors once safe."
+        ]
+    },
+    {
+        "id": 5,
+        "disaster": "Wildfire",
+        "imageUrl": "../public/wildfire.jpg",
+        "description": "Wildfires are uncontrolled fires that spread rapidly through vegetation and forests, often fueled by dry conditions, high winds, and flammable materials. They can cause destruction of property, habitat loss, and air quality issues.",
+        "preventive_measures": [
+            "Create a defensible space around your property.",
+            "Clear debris and flammable materials.",
+            "Maintain a green buffer zone.",
+            "Use fire-resistant building materials.",
+            "Have an emergency evacuation plan.",
+            "Stay informed about local fire bans.",
+            "Create an emergency kit with essentials.",
+            "Participate in local fire prevention programs.",
+            "Monitor weather conditions regularly.",
+            "Communicate with neighbors about fire safety."
+        ],
+        "during_disaster": [
+            "Follow evacuation orders from authorities.",
+            "Leave the area as quickly as possible.",
+            "Stay low to avoid smoke inhalation.",
+            "Do not attempt to fight the fire yourself.",
+            "Close windows and doors to minimize smoke intake.",
+            "Turn off gas and propane tanks if time allows.",
+            "Use a wet cloth to cover your mouth and nose.",
+            "Listen to emergency broadcasts for updates.",
+            "Avoid driving through smoke-filled areas.",
+            "Check on neighbors and pets if safe to do so."
+        ]
+    },
+    {
+        "id": 6,
+        "disaster": "Volcanic Eruption",
+        "imageUrl": "../public/volcano.jpg",
+        "description": "A volcanic eruption occurs when there is an explosion of magma from beneath the Earth's crust. Eruptions can cause lava flows, ash falls, and pyroclastic flows, posing significant hazards to nearby communities and ecosystems.",
+        "preventive_measures": [
+            "Know your area's volcanic risk and history.",
+            "Create an emergency kit with supplies.",
+            "Establish an evacuation plan with family.",
+            "Stay informed through local alerts.",
+            "Keep a supply of masks to protect from ash.",
+            "Build a protective shelter if living near a volcano.",
+            "Participate in community preparedness exercises.",
+            "Have a map of safe routes for evacuation.",
+            "Ensure your home is built to withstand ash fallout.",
+            "Maintain an adequate supply of food and water."
+        ],
+        "during_disaster": [
+            "Follow evacuation orders from authorities.",
+            "Stay indoors to avoid ash inhalation.",
+            "Cover doors and windows to prevent ash entry.",
+            "Use masks to protect your lungs.",
+            "Listen to emergency broadcasts for updates.",
+            "Avoid driving through ash-covered roads.",
+            "Keep windows closed and ventilation systems off.",
+            "Move to higher ground if lava flows are expected.",
+            "Stay away from river valleys as they may flood.",
+            "Check on neighbors and assist if safe."
+        ]
+    },
+    {
+        "id": 7,
+        "disaster": "Landslide",
+        "imageUrl": "../public/landslide.jpeg",
+        "description": "A landslide is the movement of rock, earth, or debris down a slope due to gravity. They can occur suddenly and are often triggered by heavy rain, earthquakes, or human activities, posing risks to life and property.",
+        "preventive_measures": [
+            "Identify landslide-prone areas before building.",
+            "Install retaining walls to stabilize slopes.",
+            "Monitor vegetation on slopes for signs of instability.",
+            "Create proper drainage systems to direct water flow.",
+            "Avoid clear-cutting trees on slopes.",
+            "Maintain vegetation cover to hold soil.",
+            "Stay informed about local landslide risks.",
+            "Participate in community landslide preparedness efforts.",
+            "Inspect slopes regularly for changes.",
+            "Keep emergency supplies handy in high-risk areas."
+        ],
+        "during_disaster": [
+            "Move to a safe location away from slopes.",
+            "Listen to local news for updates.",
+            "Avoid areas near rivers or streams that may flood.",
+            "Watch for falling rocks or debris.",
+            "Be prepared for potential aftershocks if caused by an earthquake.",
+            "Help others evacuate if safe to do so.",
+            "Avoid using roads that may be affected.",
+            "Stay indoors if possible.",
+            "Follow evacuation orders from authorities.",
+            "Check on neighbors and assist if needed."
+        ]
+    },
+    {
+        "id": 8,
+        "disaster": "Drought",
+        "imageUrl": "../public/drought.jpg",
+        "description": "A drought is an extended period of abnormally low rainfall relative to the statistical average for a region. It can lead to water shortages, crop failures, and increased wildfire risk, significantly impacting ecosystems and communities.",
+        "preventive_measures": [
+            "Implement water conservation measures.",
+            "Invest in drought-resistant crops.",
+            "Create rainwater harvesting systems.",
+            "Educate the community about water-saving practices.",
+            "Maintain healthy soil to retain moisture.",
+            "Use mulch to reduce evaporation.",
+            "Monitor weather patterns and forecasts.",
+            "Develop a community drought response plan.",
+            "Engage in reforestation efforts.",
+            "Participate in water management programs."
+        ],
+        "during_disaster": [
+            "Limit water usage and conserve supplies.",
+            "Implement emergency water rationing if necessary.",
+            "Follow local water restrictions.",
+            "Stay informed about drought status and updates.",
+            "Seek alternative water sources if available.",
+            "Help neighbors by sharing resources.",
+            "Report any illegal water use.",
+            "Avoid burning materials that can create fire hazards.",
+            "Educate others about the importance of conservation.",
+            "Prepare for potential food shortages."
+        ]
+    },
+    {
+        "id": 9,
+        "disaster": "Blizzard",
+        "imageUrl": "../public/blizzard.jpg",
+        "description": "A blizzard is a severe snowstorm characterized by strong sustained winds and low visibility due to falling or blowing snow. It can cause disruptions in travel, power outages, and severe cold-related hazards.",
+        "preventive_measures": [
+            "Stay informed about winter weather forecasts.",
+            "Prepare an emergency kit with food and water.",
+            "Insulate your home and check heating systems.",
+            "Have backup heating sources ready.",
+            "Keep your vehicle winter-ready with supplies.",
+            "Know your local snow removal policies.",
+            "Participate in winter preparedness drills.",
+            "Stock up on necessary medications.",
+            "Create a communication plan with family.",
+            "Avoid travel during severe weather conditions."
+        ],
+        "during_disaster": [
+            "Stay indoors and avoid travel.",
+            "Keep warm by layering clothing and blankets.",
+            "Check on neighbors, especially the elderly.",
+            "Avoid using candles for light; use flashlights.",
+            "Listen to emergency broadcasts for updates.",
+            "Prepare for power outages and stay safe.",
+            "Keep food and water supplies handy.",
+            "Use caution when using heating devices.",
+            "Avoid exposure to extreme cold.",
+            "Help others if it’s safe to do so."
+        ]
+    },
+    {
+        "id": 10,
+        "disaster": "Tsunami",
+        "imageUrl": "../public/tsunami.jpg",
+        "description": "A tsunami is a series of large ocean waves caused by underwater disturbances such as earthquakes, volcanic eruptions, or landslides. Tsunamis can travel at high speeds and cause devastating flooding in coastal areas.",
+        "preventive_measures": [
+            "Know your area's tsunami risk and evacuation routes.",
+            "Create an emergency plan with family.",
+            "Participate in tsunami drills regularly.",
+            "Have an emergency kit ready with essential supplies.",
+            "Stay informed through local alert systems.",
+            "Identify safe zones and higher ground.",
+            "Educate the community about tsunami risks.",
+            "Secure property and belongings to minimize damage.",
+            "Install tsunami warning systems if in a high-risk area.",
+            "Monitor geological activity in the region."
+        ],
+        "during_disaster": [
+            "Move to higher ground immediately.",
+            "Avoid staying in low-lying coastal areas.",
+            "Listen to emergency alerts and local news.",
+            "Stay away from the beach and water.",
+            "Be prepared for aftershocks if triggered by an earthquake.",
+            "Help others evacuate if safe to do so.",
+            "Avoid driving through flooded areas.",
+            "Follow evacuation orders from authorities.",
+            "Stay informed about tsunami warnings.",
+            "Check on neighbors once safe."
+        ]
+    },
+    {
+        "id": 11,
+        "disaster": "Extreme Heat",
+        "imageUrl": "../public/sunlight.jpg",
+        "description": "Extreme heat refers to prolonged periods of excessively high temperatures, often accompanied by high humidity. It can lead to heat-related illnesses, dehydration, and exacerbation of existing health conditions.",
+        "preventive_measures": [
+            "Stay hydrated by drinking plenty of water.",
+            "Avoid outdoor activities during peak heat hours.",
+            "Wear lightweight, loose-fitting clothing.",
+            "Create a cool environment with fans or air conditioning.",
+            "Check on vulnerable populations regularly.",
+            "Know the signs of heat-related illnesses.",
+            "Use sunscreen to protect against sunburn.",
+            "Limit strenuous activities during heat waves.",
+            "Participate in community cooling programs.",
+            "Plan ahead for emergency heat resources."
+        ],
+        "during_disaster": [
+            "Stay indoors in a cool environment.",
+            "Drink plenty of fluids, especially water.",
+            "Avoid strenuous activities during peak heat.",
+            "Check on vulnerable neighbors, especially the elderly.",
+            "Use fans or cool baths to lower body temperature.",
+            "Monitor local news for heat advisories.",
+            "Wear light clothing and hats if going outside.",
+            "Avoid alcohol and caffeinated beverages.",
+            "Seek medical attention for heat-related symptoms.",
+            "Stay informed about local cooling centers."
+        ]
+    }
+]
