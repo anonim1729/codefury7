@@ -11,7 +11,7 @@ const ShowDisaster = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
-  let API_URL = "http://localhost:3000";
+  let API_URL = import.meta.env.VITE_BACKEND_URL;
 
   useEffect(() => {
     const fetchDisaster = async () => {

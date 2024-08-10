@@ -2,7 +2,7 @@ import React from 'react';
 import {useState} from 'react'
 import { toast } from 'react-toastify';
 import axios from "axios"
-let API_URL="http://localhost:3000";
+let API_URL=import.meta.env.VITE_BACKEND_URL;
 const Create = () => {
 
     const [formData, setFormData] = useState({

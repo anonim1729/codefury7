@@ -27,6 +27,7 @@ router.get("/", async (req, res) => {
 // Create a new disaster
 router.post("/new", async (req, res) => {
     try {
+        console.log(req.body);
         const newDisaster = new Disaster(req.body);
         await newDisaster.save();
         res.status(201).json(newDisaster);

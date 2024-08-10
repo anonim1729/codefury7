@@ -4,7 +4,7 @@ import AuthContext from '../contexts/AuthContext';
 import axios from 'axios';
 
 const Notifications = () => {
-    const API_URL = 'http://localhost:3000/';
+    const API_URL = import.meta.env.VITE_BACKEND_URL;
     const [messages, setMessages] = useState([]);
     const [newMessage, setNewMessage] = useState('');
     const { location, role, user } = useContext(AuthContext);
@@ -12,7 +12,7 @@ const Notifications = () => {
     useEffect(() => {
         const fetchMessages = async () => {
             try {
-                const response = await axios.get(`${API_URL}messages?location=${location}`, {
+                const response = await axios.get(`${API_URL}/messages?location=${location}`, {
                     headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
                 });
                 setMessages(response.data);

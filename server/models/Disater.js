@@ -5,7 +5,7 @@ const disasterSchema = new Schema({
   name: {
     type: String,
     required: true,
-    enum:["Earthquake","Flood","Tsunami","Cyclone","Landslide","Cloudburst",]
+    enum:["Earthquake","Flood","Tsunami","Cyclone","Landslide","Cloudburst","Forest Fire"]
   },
   occuredOn: {
     type: Date,

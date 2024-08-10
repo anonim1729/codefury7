@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const API_KEY = 'AIzaSyCfiz3MeNqaLYUM5OaGM4QMsR1c-6WruoY';
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 
 const AdditionalInfo = ({ disas }) => {
   const [data, setData] = useState(null);

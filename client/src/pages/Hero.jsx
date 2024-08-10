@@ -15,7 +15,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="bg-blue-500 py-2">
+    <div className=" py-2">
       {/* <h1 className="text-white text-4xl font-bold text-center mb-6">Our Amazing Gallery</h1> */}
       <div className="relative">
       <div

@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
-let API_URL = "http://localhost:3000"
+let API_URL = import.meta.env.VITE_BACKEND_URL;
 
 const UpdateDisaster = () => {
   const { id } = useParams();
@@ -61,9 +61,14 @@ const UpdateDisaster = () => {
           onChange={handleOnChange}
           className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
         >
-          <option value="Earthquake">Earthquake</option>
-          <option value="Tsunami">Tsunami</option>
-          <option value="Storm">Storm</option>
+          <option value="" disabled>Select disaster type</option>
+    <option value="Earthquake">Earthquake</option>
+    <option value="Tsunami">Tsunami</option>
+    <option value="Cyclone">Cyclone</option>
+    <option value="Flood">Flood</option>
+    <option value="Landslide">Landslide</option>
+    <option value="Cloudburst">Cloudburst</option>
+    <option value="Forest Fire">Forest fire</option>
         </select>
       </div>
 
