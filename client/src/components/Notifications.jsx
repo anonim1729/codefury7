@@ -90,7 +90,7 @@ const Notifications = () => {
                 </div>
 
                 {/* Input Area */}
-                {role === 'volunteer' ? (
+                {role === 'volenteer' ? (
                     <div className="bg-blue-500 p-2 flex items-center">
                         <input
                             type="text"
