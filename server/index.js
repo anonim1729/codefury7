@@ -8,6 +8,7 @@ const mongoose = require('mongoose');
 const colors = require('colors');
 const Authrouter = require('./routes/Authrouter.js');
 const MessageRouter = require('./routes/MessageRouter.js');
+const DisasterRouter=require('./routes/Disaster.js');
 
 // env variables
 dotenv.config({ path: './config/.env' });
@@ -33,6 +34,7 @@ app.get('/', (req, res) => {
 })
 app.use('/auth', Authrouter);
 app.use('/messages', MessageRouter);
+app.use('/disaster',DisasterRouter);
 
 
 const PORT = process.env.PORT || 3000;

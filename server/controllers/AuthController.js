@@ -29,7 +29,7 @@ const signup = async (req, res) => {
 const signin = async (req, res) => {
   try {
     const { email, password } = req.body;
-    // console.log(email,password);
+    console.log(email,password);
     let user = await User.findOne({ email });
     if (!user) {
       return res.status(400).json({ message: "User does not exist, please signup" });
