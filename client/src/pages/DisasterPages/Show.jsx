@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Loader from "../../components/Loader";
-// import "../../../"
-// import "../../../public/loader.css"
 let API_URL = "http://localhost:3000";
 
 const Show = () => {
@@ -38,7 +36,7 @@ const Show = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold text-blue-500 mb-6 text-center">Disaster Reports</h2>
+      <h2 className="text-2xl font-bold text-blue-500 mb-6 text-center">Disaster Reports </h2>
       <ul className="space-y-4">
         {disasters.map((disaster) => (
           <li key={disaster._id} className="p-4 border rounded-lg shadow-md hover:bg-blue-50 transition">
@@ -59,6 +57,7 @@ const Show = () => {
           </li>
         ))}
       </ul>
+      <Link to={`/disaster/new`}><button type="button">Add+</button></Link>
     </div>
   );
 };
