@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
+import Loader from '../../components/Loader';
 
 const ShowDisaster = () => {
   const { id } = useParams();
@@ -27,7 +28,7 @@ const ShowDisaster = () => {
   }, [id]);
 
   if (loading) {
-    return <div className="text-center text-blue-500">Loading...</div>;
+    return <Loader/>;
   }
 
   if (error) {
