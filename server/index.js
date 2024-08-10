@@ -6,7 +6,8 @@ const morgan = require('morgan');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const colors = require('colors');
-const Authrouter=require('./routes/Authrouter.js');
+const Authrouter = require('./routes/Authrouter.js');
+const MessageRouter = require('./routes/MessageRouter.js');
 
 // env variables
 dotenv.config({ path: './config/.env' });
@@ -30,7 +31,8 @@ mongoose.connect(process.env.DB_URL)
 app.get('/', (req, res) => {
     res.end('Hello World!');
 })
-app.use('/auth',Authrouter);
+app.use('/auth', Authrouter);
+app.use('/messages', MessageRouter);
 
 
 const PORT = process.env.PORT || 3000;

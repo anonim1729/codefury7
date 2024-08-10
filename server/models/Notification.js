@@ -1,5 +1,4 @@
-const mongoose = require('mongoose');
-
+const mongoose=require('mongoose');
 const NotificationSchema = new mongoose.Schema({
   location: {
     type: String,
@@ -13,7 +12,7 @@ const NotificationSchema = new mongoose.Schema({
   email: {
     type: String,
     required: true,
-    unique: true,
+    unique:false,
     match: [/^\S+@\S+\.\S+$/, 'Please enter a valid email address'],
   },
   messagedAt: {
@@ -21,4 +20,5 @@ const NotificationSchema = new mongoose.Schema({
     default: Date.now
   },
 }, { timestamps: true }); 
+
 module.exports = mongoose.model('Notification', NotificationSchema);
