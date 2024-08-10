@@ -15,6 +15,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Dashboard from './components/Dashboard';
 import Chatbot from './components/Chatbot';
 import UserForm from './components/UserForm';
+import Notifications from './components/Notifications';
 function App() {
   const router = createBrowserRouter([
     {
@@ -36,6 +37,10 @@ function App() {
         {
           path: 'form',
           element: <UserForm />
+        },
+        {
+          path:'notifications',
+          element:<Notifications/>
         },
         {
           path: 'disaster',

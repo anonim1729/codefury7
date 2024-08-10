@@ -6,7 +6,8 @@ const morgan = require('morgan');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const colors = require('colors');
-const Authrouter=require('./routes/Authrouter.js');
+const Authrouter = require('./routes/Authrouter.js');
+const MessageRouter = require('./routes/MessageRouter.js');
 const DisasterRouter=require('./routes/Disaster.js');
 
 // env variables
@@ -31,7 +32,8 @@ mongoose.connect(process.env.DB_URL)
 app.get('/', (req, res) => {
     res.end('Hello World!');
 })
-app.use('/auth',Authrouter);
+app.use('/auth', Authrouter);
+app.use('/messages', MessageRouter);
 app.use('/disaster',DisasterRouter);
 
 
