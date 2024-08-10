@@ -17,6 +17,7 @@ import Chatbot from './components/Chatbot';
 import UserForm from './components/UserForm';
 import Notifications from './components/Notifications';
 import AlertPages from './pages/AlertPages';
+import Weather from './components/Weather';
 function App() {
   const router = createBrowserRouter([
     {
@@ -46,6 +47,10 @@ function App() {
         {
           path:'alerts',
           element:<AlertPages/>
+        },
+        {
+          path:'weather',
+          element:<Weather/>
         },
         {
           path: 'disaster',
