@@ -8,6 +8,7 @@ import Create from './pages/DisasterPages/CreateDisaster'
 import Show from './pages/DisasterPages/Show'
 import ShowDisaster from './pages/DisasterPages/ShowDisaster';
 import UpdateDisaster from './pages/DisasterPages/Update';
+import NotFound from './pages/NotFound';
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -77,6 +78,10 @@ function App() {
     {
       path: '/signup',
       element: <SignUp />
+    },
+    {
+      path: '*',
+      element: <NotFound/>
     }
   ])
   return (

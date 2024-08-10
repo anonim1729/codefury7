@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import Loader from "../../components/Loader";
+// import "../../../"
+// import "../../../public/loader.css"
 let API_URL = "http://localhost:3000";
 
 const Show = () => {
@@ -24,7 +27,9 @@ const Show = () => {
   }, []);
 
   if (loading) {
-    return <div className="text-center text-blue-500">Loading...</div>;
+    return (
+      <Loader/>
+    );
   }
 
   if (error) {

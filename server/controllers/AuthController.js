@@ -18,7 +18,7 @@ const signup = async (req, res) => {
     await user.save();
 
     const payload = { user: user._id };
-    const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '2m' });
+    const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '2h' });
 
     res.status(201).json({ user,token});
   } catch (error) {
@@ -40,7 +40,7 @@ const signin = async (req, res) => {
       return res.status(400).json({ message: "Wrong password" });
     }
     const payload = { user: user._id };
-    const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '2m' });
+    const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '2h' });
 
     res.status(200).json({ user,token });
   } catch (error) {
