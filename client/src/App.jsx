@@ -17,6 +17,11 @@ import Weather from './components/Weather';
 import NaturalDisasters from './pages/NaturalDisasters';
 import DisasterPrep from './components/DisasterPrep';
 
+import Create from './pages/DisasterPages/CreateDisaster'
+import Show from './pages/DisasterPages/Show'
+import ShowDisaster from './pages/DisasterPages/ShowDisaster';
+import UpdateDisaster from './pages/DisasterPages/Update';
+
 function App() {
   const router = createBrowserRouter([
     {
@@ -54,6 +59,28 @@ function App() {
         {
           path: 'edu',
           element: <NaturalDisasters />
+        },
+        {
+          path: 'disaster',
+          // element: <div>Hello</div>, // Placeholder, replace with an actual layout if needed
+          children: [
+            {
+              path: '',
+              element: <Show /> 
+            },
+            {
+              path: 'new',
+              element: <Create /> // This will render the Create component at /disaster/new
+            },
+            {
+              path:':id',
+              element: <ShowDisaster />
+            },
+            {
+              path: 'update/:id',
+              element: <UpdateDisaster />,
+            }
+          ]
         },
         {
           path: 'disasters',

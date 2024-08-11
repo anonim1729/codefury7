@@ -16,10 +16,10 @@ const Home = () => {
               <Card title="Past Calamity" logo={<i className="fa-solid fa-house text-3xl"></i>} link="/disaster" />
             </div>
             <div className="flex flex-col items-center bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
-              <Card title="Natural Disasters" logo={<i className="fa-solid fa-volcano text-3xl"></i>} />
+              <Card title="Natural Disasters" logo={<i className="fa-solid fa-volcano text-3xl"></i>} link="/edu"/>
             </div>
             <div className="flex flex-col items-center bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
-              <Card title="Safety Measures" logo={<i className="fa-solid fa-tornado text-3xl"></i>} />
+              <Card title="Safety Measures" logo={<i className="fa-solid fa-tornado text-3xl"></i>} link="/edu"/>
             </div>
           </div>
         </div>
@@ -29,9 +29,9 @@ const Home = () => {
       <div className="bg-gray-100 py-10">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card title="Past Calamity" logo={<i className="fa-solid fa-house text-2xl"></i>} link="/disaster" />
-            <Card title="Natural Disasters" logo={<i className="fa-solid fa-volcano text-2xl"></i>} />
-            <Card title="Safety Measures" logo={<i className="fa-solid fa-tornado text-2xl"></i>} />
+            <Card title="Weather" logo={<i className="fa-solid fa-house text-2xl"></i>} link="/weather" />
+            <Card title="Notification" logo={<i className="fa-solid fa-volcano text-2xl"></i>} link="/notifications"/>
+            <Card title="ChatBot" logo={<i className="fa-solid fa-tornado text-2xl"></i>} link="/chat"/>
           </div>
         </div>
       </div>
